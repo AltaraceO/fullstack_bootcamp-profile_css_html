@@ -1,0 +1,207 @@
+@font-face {
+  font-family: icq;
+  src: url(../fonts/MS\ Sans\ Serif\ 8pt.woff);
+}
+@font-face {
+  font-family: icq bold;
+  src: url(../fonts/MS\ Sans\ Serif\ 8pt\ bold.woff);
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: pink;
+}
+/* -------------checkbox buttons--------------------- */
+.icons {
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+}
+
+.checks {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+.icon__contact {
+  top: 0;
+  left: 0;
+  background: url(../icons/phone.png) no-repeat center center/cover;
+}
+
+.check__contact {
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.icon__about {
+  top: 365px;
+  left: 0;
+  background: url(../icons/notepad.png) no-repeat center center/cover;
+}
+
+.check__about {
+  top: 365px;
+  left: 0;
+  opacity: 0;
+}
+
+.icon__cv {
+  top: 565px;
+  left: 0;
+  background: url(../icons/CV.png) no-repeat center center/cover;
+}
+
+.check__cv {
+  top: 565px;
+  left: 0;
+  opacity: 0;
+}
+
+/* ------------------------transition--------------------------- */
+
+/* duration of content apprearing */
+.check__contact:checked ~ .contact {
+  transform: scale(1);
+  transition-duration: 0.1s;
+}
+
+.check__about:checked ~ .about {
+  transform: scale(1);
+  transition-duration: 0.1s;
+}
+
+.check__cv:checked ~ .cv {
+  transform: scale(1);
+  transition-duration: 0.1s;
+}
+/*--------------------------------- windows ----------------- */
+
+.contact {
+  transform: scale(0);
+  transition: all 0.1s ease;
+}
+
+.about {
+  position: absolute;
+  left: 50px;
+  top: 600px;
+  transform: scale(0);
+  transition: all 0.1s ease;
+}
+
+.cv {
+  position: absolute;
+  left: 50px;
+  top: 800px;
+  transform: scale(0);
+  transition: all 0.1s ease;
+}
+
+/* --------------------------------2 ------------------ */
+
+.container {
+  border: 2px solid;
+  border-bottom-color: #535353;
+  border-right-color: #535353;
+  border-left-color: #dbdbdb;
+  border-top-color: #dbdbdb;
+  background-color: #bfbfbf;
+  max-width: 600px;
+  font-size: 13px;
+  padding: 2px;
+}
+
+.container,
+ul.toolbar {
+  list-style: none;
+  padding: 2px 0;
+  margin: 0;
+}
+.container,
+ul.toolbar,
+li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.container-inner {
+  border: 2px solid;
+  border-bottom-color: #c7c7c7;
+  border-right-color: #c7c7c7;
+  border-left-color: #808080;
+  border-top-color: #808080;
+  background-color: #fff;
+  padding: 10px;
+}
+.container-inner,
+ul.icons {
+  list-style: none;
+  padding: 2px 0;
+  margin: 0;
+}
+.container-inner,
+ul.icons,
+li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.statusbar .left,
+.right {
+  border: 1px solid;
+  border-color: #888 #dadada #dadada #888;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 11px;
+}
+
+.left {
+  width: 33%;
+}
+
+.right {
+  width: 66%;
+}
+
+.title {
+  background-color: #808080;
+  padding: 2px 4px 3px 4px;
+  position: relative;
+}
+.title h1 {
+  font-weight: bold;
+  color: #bcbcbc;
+  font-size: 13px;
+  margin: 0;
+}
+.title h1 button {
+  border: 2px solid;
+  border-bottom-color: #444;
+  border-right-color: #444;
+  border-left-color: #a6a6a6;
+  border-top-color: #a6a6a6;
+  background-color: #bfbfbf;
+  position: absolute;
+  font-size: 9px;
+  line-height: 0;
+  padding: 1px;
+  height: 15px;
+  width: 15px;
+  top: 2px;
+}
+button.minimize {
+  right: 34px;
+}
+button.expand {
+  right: 18px;
+}
+button.times {
+  right: 2px;
+}

@@ -1,0 +1,281 @@
+@font-face {
+  font-family: icq;
+  src: url(/fonts/MS\ Sans\ Serif\ 8pt.woff);
+}
+@font-face {
+  font-family: icq bold;
+  src: url(/fonts/MS\ Sans\ Serif\ 8pt\ bold.woff);
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "icq bold";
+  font-size: 7rem;
+}
+
+p {
+  font-family: "icq";
+  font-size: 3rem;
+  letter-spacing: 3px;
+  word-spacing: 8px;
+}
+
+/* needs to change */
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Checkbox setup */
+.toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+/* REVEAL DARK MENU */
+.toggler:checked ~ .content {
+  visibility: visible;
+}
+
+/* duration of content apprearing */
+.toggler:checked ~ .content .window {
+  transform: scale(1);
+  transition-duration: 0.1s;
+}
+/* opacity of content */
+.toggler:checked ~ .content .window > div {
+  opacity: 1;
+  transition: opacity 0.1s ease 0.1s;
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.content .window {
+  background: pink;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.1s ease;
+}
+
+/* THIS IS THE TEXT WITHIN THE TOTAL OVERLAY OF THE MENU */
+.content .window > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+/* --------------------------------2 ------------------ */
+
+/* needs to change */
+.icon2 {
+  position: absolute;
+  bottom: 300px;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Checkbox setup */
+.toggler2 {
+  position: absolute;
+  bottom: 300px;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+}
+
+/* REVEAL DARK MENU */
+.toggler2:checked ~ .content2 {
+  visibility: visible;
+}
+
+/* duration of content apprearing */
+.toggler2:checked ~ .content2 .window2 {
+  transform: scale(1);
+  transition-duration: 0.1s;
+}
+/* opacity of content */
+.toggler2:checked ~ .content2 .window2 > div {
+  opacity: 1;
+  transition: opacity 0.1s ease 0.1s;
+}
+
+.content2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.content2 .window2 {
+  /* background: purple; */
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.1s ease;
+}
+
+/* THIS IS THE TEXT WITHIN THE TOTAL OVERLAY OF THE MENU */
+.content2 .window2 > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+/* ------------added---------------- */
+
+.container {
+  border: 2px solid;
+  border-bottom-color: #535353;
+  border-right-color: #535353;
+  border-left-color: #dbdbdb;
+  border-top-color: #dbdbdb;
+  background-color: #bfbfbf;
+  max-width: 600px;
+  font-size: 13px;
+  padding: 2px;
+}
+
+.container,
+ul.toolbar {
+  list-style: none;
+  padding: 2px 0;
+  margin: 0;
+}
+.container,
+ul.toolbar,
+li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.container-inner {
+  border: 2px solid;
+  border-bottom-color: #c7c7c7;
+  border-right-color: #c7c7c7;
+  border-left-color: #808080;
+  border-top-color: #808080;
+  background-color: #fff;
+  padding: 10px;
+}
+.container-inner,
+ul.icons {
+  list-style: none;
+  padding: 2px 0;
+  margin: 0;
+}
+.container-inner,
+ul.icons,
+li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.statusbar .left,
+.right {
+  border: 1px solid;
+  border-color: #888 #dadada #dadada #888;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 11px;
+}
+
+.left {
+  width: 33%;
+}
+
+.right {
+  width: 66%;
+}
+
+.title {
+  background-color: #808080;
+  padding: 2px 4px 3px 4px;
+  position: relative;
+}
+.title h1 {
+  font-weight: bold;
+  color: #bcbcbc;
+  font-size: 13px;
+  margin: 0;
+}
+.title h1 button {
+  border: 2px solid;
+  border-bottom-color: #444;
+  border-right-color: #444;
+  border-left-color: #a6a6a6;
+  border-top-color: #a6a6a6;
+  background-color: #bfbfbf;
+  position: absolute;
+  font-size: 9px;
+  line-height: 0;
+  padding: 1px;
+  height: 15px;
+  width: 15px;
+  top: 2px;
+}
+button.minimize {
+  right: 34px;
+}
+button.expand {
+  right: 18px;
+}
+button.times {
+  right: 2px;
+}

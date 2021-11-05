@@ -48,3 +48,61 @@ body {
   border-right-color: var(--inner-bottom);
   border-bottom-color: var(--inner-bottom);
 }
+.outer-box--window {
+  background: var(--background-grey);
+  border: 2px solid;
+  /* padding: 15px 15px; */
+  border-top-color: var(--outer-top);
+  border-left-color: var(--outer-top);
+  border-right-color: var(--outer-bottom);
+  border-bottom-color: var(--outer-bottom);
+}
+
+.inner-box--window {
+  border: 2px solid;
+  background-color: white;
+  border-top-color: var(--inner-top);
+  border-left-color: var(--inner-top);
+  border-right-color: var(--inner-bottom);
+  border-bottom-color: var(--inner-bottom);
+}
+
+.window .window--title {
+  background-color: var(--header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window .window--title h6 {
+  font-size: 15px;
+  padding: 2px;
+  color: var(--background-grey);
+}
+
+.window .window--title .close {
+  font-size: 15px;
+  border: 2px solid;
+  border-top: var(--outer-top);
+  border-left: var(--outer-top);
+  border-right: var(--outer-bottom);
+  border-bottom: var(--outer-bottom);
+  background-color: var(--outer-top);
+}
+
+.window .window--file {
+  padding: 2px;
+  display: inline-block;
+}
+
+.window .information {
+  padding: 10px;
+}
+
+.window .window--footer {
+  border: 1px solid;
+  border-color: var(--inner-top) var(--outer-top) var(--outer-top)
+    var(--inner-top);
+  display: inline-block;
+  padding: 5px;
+}

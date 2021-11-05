@@ -3,14 +3,14 @@ body {
 }
 
 nav {
-  width: 30%;
+  width: 20%;
   height: 94%;
   display: inline-block;
-  /* position: fixed; */
+  min-width: 170px;
 }
 
 main {
-  width: 70%;
+  width: 80%;
   height: 94%;
   display: inline-block;
   float: right;
@@ -19,6 +19,7 @@ main {
 footer {
   height: 6%;
   width: 100%;
+  min-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,6 +59,11 @@ nav .checks {
   cursor: pointer;
   width: 100px;
   height: 100px;
+}
+nav .nav__container h5 {
+  margin-top: 105px;
+  text-align: center;
+  font-size: 1rem;
 }
 
 nav .icon__contact {
@@ -118,4 +124,16 @@ nav .check__social {
   top: 390px;
   left: 10px;
   opacity: 0;
+}
+
+/* ---------------windows-------------------- */
+
+.main__container {
+  overflow: hidden;
+  border: 6px solid;
+  height: 100%;
+  background: var(--background);
+  padding: 20px;
+  display: grid;
+  gap: 5px;
 }

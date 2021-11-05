@@ -34,27 +34,27 @@ nav {
   border: red solid 3px;
 }
 /* -------------checkbox buttons--------------------- */
-.icons {
+.borders .icons {
   position: absolute;
   z-index: 1;
   width: 100px;
   height: 100px;
 }
 
-.checks {
+.borders .checks {
   position: absolute;
   z-index: 2;
   cursor: pointer;
   width: 100px;
   height: 100px;
 }
-.icon__contact {
+.borders .icon__contact {
   top: 0;
   left: 0;
   background: url(../icons/phone.png) no-repeat center center/cover;
 }
 
-.check__contact {
+.borders .check__contact {
   top: 0;
   left: 0;
   opacity: 0;
@@ -87,7 +87,7 @@ nav {
 /* ------------------------transition--------------------------- */
 
 /* duration of content apprearing */
-.check__contact:checked ~ .contact {
+.borders .check__contact:checked ~ .contact {
   transform: scale(1);
   transition-duration: 0.1s;
 }

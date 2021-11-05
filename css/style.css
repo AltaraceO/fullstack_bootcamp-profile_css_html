@@ -7,18 +7,7 @@ nav {
   height: 94%;
   display: inline-block;
   min-width: 170px;
-  /* display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap; */
 }
-
-/* main {
-  width: 80%;
-  height: 94%;
-  display: inline-block;
-  float: right;
-} */
 
 footer {
   height: 6%;

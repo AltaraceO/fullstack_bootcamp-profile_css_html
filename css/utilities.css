@@ -1,0 +1,50 @@
+:root {
+  --outer-bottom: #535353;
+  --inner-top: #808080;
+  --outer-top: #dbdbdb;
+  --inner-bottom: #dadada;
+  --background: #008080;
+  --header: #00007f;
+  --background-grey: #c0c0c0;
+}
+
+@font-face {
+  font-family: icq;
+  src: url(/fonts/MS\ Sans\ Serif\ 8pt.woff);
+}
+@font-face {
+  font-family: icq bold;
+  src: url(/fonts/MS\ Sans\ Serif\ 8pt\ bold.woff);
+}
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "icq";
+  font-size: 62.5%;
+  letter-spacing: 3px;
+  word-spacing: 6px;
+}
+
+.outer-box {
+  background: var(--background-grey);
+  border: 6px solid;
+  padding: 15px 15px;
+  border-top-color: var(--outer-top);
+  border-left-color: var(--outer-top);
+  border-right-color: var(--outer-bottom);
+  border-bottom-color: var(--outer-bottom);
+}
+
+.inner-box {
+  border: 6px solid;
+  /* background: var(--background-grey); */
+  border-top-color: var(--inner-top);
+  border-left-color: var(--inner-top);
+  border-right-color: var(--inner-bottom);
+  border-bottom-color: var(--inner-bottom);
+}

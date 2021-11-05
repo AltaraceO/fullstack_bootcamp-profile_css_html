@@ -1,0 +1,121 @@
+body {
+  height: 100vh;
+}
+
+nav {
+  width: 30%;
+  height: 94%;
+  display: inline-block;
+  /* position: fixed; */
+}
+
+main {
+  width: 70%;
+  height: 94%;
+  display: inline-block;
+  float: right;
+}
+
+footer {
+  height: 6%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+footer .start {
+  padding: 4px 6px 0 40px;
+  font-size: 1.75rem;
+}
+
+footer .time {
+  padding: 4px 6px 0 20px;
+  font-size: 1.75rem;
+}
+
+.nav__container {
+  overflow: hidden;
+  border: 6px solid;
+  height: 100%;
+  background: #fff;
+  position: relative;
+}
+
+/* -------------checkbox buttons--------------------- */
+
+nav .icons {
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+}
+
+nav .checks {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+nav .icon__contact {
+  top: 200px;
+  left: 10px;
+  background: url(../icons/phone.png) no-repeat center center/cover;
+}
+
+nav .check__contact {
+  top: 200px;
+  left: 10px;
+  opacity: 0;
+}
+
+nav .icon__about {
+  top: 10px;
+  left: 10px;
+  background: url(../icons/notepad.png) no-repeat center center/cover;
+}
+
+nav .check__about {
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+}
+
+nav .icon__cv {
+  top: 580px;
+  left: 10px;
+  background: url(../icons/CV.png) no-repeat center center/cover;
+}
+
+nav .check__cv {
+  top: 580px;
+  left: 10px;
+  opacity: 0;
+}
+
+nav .icon__message {
+  top: 770px;
+  left: 10px;
+  background: url(../icons/leaveAnote.png) no-repeat center center/cover;
+}
+
+nav .check__message {
+  top: 770px;
+  left: 10px;
+  opacity: 0;
+}
+
+nav .icon__social {
+  top: 390px;
+  left: 10px;
+  background: url(../icons/socialPlanet.png) no-repeat center center/cover;
+}
+
+nav .check__social {
+  top: 390px;
+  left: 10px;
+  opacity: 0;
+}

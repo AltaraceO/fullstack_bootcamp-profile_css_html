@@ -27,8 +27,9 @@ footer {
 }
 
 footer .start {
-  padding: 4px 6px 0 40px;
+  padding-left: 60px;
   font-size: 1.75rem;
+  font-family: "icq bold";
 }
 
 footer .time {
@@ -129,11 +130,88 @@ nav .check__social {
 /* ---------------windows-------------------- */
 
 .main__container {
-  overflow: hidden;
+  /* overflow: hidden; */
   border: 6px solid;
   height: 100%;
   background: var(--background);
   padding: 20px;
-  display: grid;
-  gap: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* about me */
+
+.main__container .aboutme {
+  width: 350px;
+}
+
+.main__container .aboutme .window--text .information img {
+  width: 100px;
+  padding-right: 20px;
+}
+.main__container .aboutme .window--text .information p {
+  display: inline-block;
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+
+/* contact */
+
+.main__container .contact {
+  align-self: flex-start;
+}
+
+.main__container .contact .window--text .information > ul {
+  list-style: none;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  padding-inline-start: 0;
+}
+/* social */
+
+.main__container .social {
+  /* align-self: flex-start; */
+}
+
+.main__container .social .window--text .information > ul {
+  list-style: none;
+  line-height: 1.2rem;
+  font-size: 2rem;
+  padding-inline-start: 0;
+}
+/* cv */
+
+.main__container .cv {
+  /* align-self: flex-end; */
+}
+
+.main__container .cv .window--text .information > p {
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+/* message */
+
+.main__container .message {
+  /* align-self: flex-end; */
+}
+
+.main__container .message .window--text .information {
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+
+.main__container .message .window--text .information input {
+  width: 100%;
+  padding-top: 5px;
+  border: 2px solid;
+  border-top-color: var(--inner-top);
+  border-left-color: var(--inner-bottom);
+  border-bottom-color: var(--inner-bottom);
+  border-left-color: var(--inner-top);
+}
+.main__container .message .window--text .information .message--space {
+  padding: 20px;
 }

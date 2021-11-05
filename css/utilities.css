@@ -42,16 +42,17 @@ body {
 
 .inner-box {
   border: 6px solid;
+
   /* background: var(--background-grey); */
   border-top-color: var(--inner-top);
   border-left-color: var(--inner-top);
   border-right-color: var(--inner-bottom);
   border-bottom-color: var(--inner-bottom);
 }
+
 .outer-box--window {
   background: var(--background-grey);
   border: 2px solid;
-  /* padding: 15px 15px; */
   border-top-color: var(--outer-top);
   border-left-color: var(--outer-top);
   border-right-color: var(--outer-bottom);
@@ -72,6 +73,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .window .window--title h6 {
@@ -80,19 +83,22 @@ body {
   color: var(--background-grey);
 }
 
-.window .window--title .close {
-  font-size: 15px;
+.main__container .window .window--title .close {
   border: 2px solid;
-  border-top: var(--outer-top);
-  border-left: var(--outer-top);
-  border-right: var(--outer-bottom);
-  border-bottom: var(--outer-bottom);
+  border-top-color: var(--outer-top);
+  border-left-color: var(--outer-top);
+  border-right-color: var(--outer-bottom);
+  border-bottom-color: var(--outer-bottom);
   background-color: var(--outer-top);
+  font-size: 9px;
+  line-height: 0;
+  padding: 1px;
+  height: 15px;
+  width: 15px;
 }
 
 .window .window--file {
   padding: 2px;
-  display: inline-block;
 }
 
 .window .information {
@@ -103,6 +109,5 @@ body {
   border: 1px solid;
   border-color: var(--inner-top) var(--outer-top) var(--outer-top)
     var(--inner-top);
-  display: inline-block;
   padding: 5px;
 }

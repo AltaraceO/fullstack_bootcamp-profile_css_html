@@ -140,13 +140,20 @@ footer .time {
 .check__contact:checked ~ .contact {
   transform: scale(1);
 }
-/* ---------------windows-------------------- */
-.trnsprnt-bx {
-  height: 300px;
-  width: 300px;
-  border: solid 3px red;
-  background-color: red;
+.check__about:checked ~ .aboutme {
+  transform: scale(1);
 }
+.check__cv:checked ~ .cv {
+  transform: scale(1);
+}
+.check__social:checked ~ .social {
+  transform: scale(1);
+}
+.check__message:checked ~ .message {
+  transform: scale(1);
+}
+
+/* ---------------windows-------------------- */
 
 /* about me */
 
@@ -154,6 +161,8 @@ footer .time {
   margin: 20px;
   height: 300px;
   width: 500px;
+  transform: scale(0);
+  transition: all 0.1s ease;
 }
 
 .aboutme .window--text .information img {
@@ -186,6 +195,8 @@ footer .time {
 .social {
   align-self: flex-start;
   margin: 20px;
+  transform: scale(0);
+  transition: all 0.1s ease;
 }
 
 .social .window--text .information > ul {
@@ -200,6 +211,8 @@ footer .time {
   align-self: flex-end;
   margin: 20px;
   width: 300px;
+  transform: scale(0);
+  transition: all 0.1s ease;
 }
 
 .cv .window--text .information > p {
@@ -211,6 +224,8 @@ footer .time {
 .message {
   align-self: flex-end;
   margin: 20px;
+  transform: scale(0);
+  transition: all 0.1s ease;
 }
 
 .message .window--text .information {

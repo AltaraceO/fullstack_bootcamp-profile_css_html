@@ -11,8 +11,11 @@ body {
 nav {
   width: 100%;
   height: 94%;
-  display: inline-block;
-  min-width: 170px;
+}
+@media (max-width: 770px) {
+  nav {
+    height: 97%;
+  }
 }
 
 footer {
@@ -37,15 +40,22 @@ footer .start {
   font-family: "icq bold";
   cursor: pointer;
 }
+
+footer .start a {
+  color: black;
+  text-decoration: none;
+}
+footer .start:hover a {
+  color: var(--background);
+}
+
 footer .start:hover {
-  color: red;
   border-bottom-color: var(--inner-top);
   border-right-color: var(--inner-top);
   border-left-color: var(--inner-bottom);
   border-top-color: var(--inner-bottom);
 }
 footer .start:active {
-  color: black;
   border-top-color: var(--inner-top);
   border-left-color: var(--inner-top);
   border-right-color: var(--inner-bottom);
@@ -78,9 +88,20 @@ footer .time {
   justify-content: flex-end;
   flex-wrap: wrap;
 }
+nav .instruction {
+  position: absolute;
+  font-size: 1.8rem;
+  opacity: 0.5;
+  top: 10px;
+  left: 50%;
+}
 @media (max-width: 770px) {
   .nav_container {
     align-content: flex-end;
+  }
+  nav .instruction {
+    top: 400px;
+    left: 10px;
   }
 }
 
@@ -336,5 +357,5 @@ footer .time {
   border-left-color: var(--inner-top);
 }
 .message .window--text .information .message--space {
-  padding: 20px;
+  height: 60px;
 }

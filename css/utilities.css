@@ -78,8 +78,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding: 2px 4px;
 }
 
 .window .window--title h6 {
@@ -89,7 +88,7 @@ body {
 }
 
 .main__container .window .window--title .close {
-  border: 2px solid;
+  border: 4px solid;
   border-top-color: var(--outer-top);
   border-left-color: var(--outer-top);
   border-right-color: var(--outer-bottom);

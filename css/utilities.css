@@ -42,12 +42,17 @@ body {
 
 .inner-box {
   border: 6px solid;
-
-  /* background: var(--background-grey); */
   border-top-color: var(--inner-top);
   border-left-color: var(--inner-top);
   border-right-color: var(--inner-bottom);
   border-bottom-color: var(--inner-bottom);
+}
+.inner-box-hover {
+  border: 6px solid;
+  border-bottom-color: var(--inner-top);
+  border-right-color: var(--inner-top);
+  border-left-color: var(--inner-bottom);
+  border-top-color: var(--inner-bottom);
 }
 
 .outer-box--window {
